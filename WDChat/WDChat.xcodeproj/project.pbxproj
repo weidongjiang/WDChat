@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C7F27CF111F00084A7A /* AppDelegate.swift */; };
+		76403C8227CF111F00084A7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C8127CF111F00084A7A /* SceneDelegate.swift */; };
+		76403C8427CF111F00084A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C8327CF111F00084A7A /* ViewController.swift */; };
+		76403C8727CF111F00084A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8527CF111F00084A7A /* Main.storyboard */; };
+		76403C8927CF112000084A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8827CF112000084A7A /* Assets.xcassets */; };
+		76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8A27CF112000084A7A /* LaunchScreen.storyboard */; };
+		76403C9727CF112100084A7A /* WDChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C9627CF112100084A7A /* WDChatTests.swift */; };
+		76403CA127CF112100084A7A /* WDChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CA027CF112100084A7A /* WDChatUITests.swift */; };
+		76403CA327CF112100084A7A /* WDChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CA227CF112100084A7A /* WDChatUITestsLaunchTests.swift */; };
+		76403CB227CF133400084A7A /* WDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CB127CF133400084A7A /* WDMainViewController.swift */; };
+		76403CB527CF13E800084A7A /* WDBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CB427CF13E800084A7A /* WDBaseViewController.swift */; };
+		76403CB827CF144500084A7A /* WDChatMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CB727CF144500084A7A /* WDChatMessageViewController.swift */; };
+		76403CBA27CF160500084A7A /* WDChatRelationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CB927CF160500084A7A /* WDChatRelationViewController.swift */; };
+		76403CBE27CF168800084A7A /* WDChatFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CBD27CF168800084A7A /* WDChatFindViewController.swift */; };
+		76403CC127CF16BA00084A7A /* WDChatMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */; };
+		76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CC427CF20AA00084A7A /* WDChatConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76403C9327CF112100084A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76403C7427CF111F00084A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76403C7B27CF111F00084A7A;
+			remoteInfo = WDChat;
+		};
+		76403C9D27CF112100084A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76403C7427CF111F00084A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76403C7B27CF111F00084A7A;
+			remoteInfo = WDChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		76403C7C27CF111F00084A7A /* WDChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76403C7F27CF111F00084A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76403C8127CF111F00084A7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		76403C8327CF111F00084A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76403C8627CF111F00084A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76403C8827CF112000084A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76403C8B27CF112000084A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76403C8D27CF112000084A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76403C9227CF112100084A7A /* WDChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76403C9627CF112100084A7A /* WDChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatTests.swift; sourceTree = "<group>"; };
+		76403C9C27CF112100084A7A /* WDChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76403CA027CF112100084A7A /* WDChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatUITests.swift; sourceTree = "<group>"; };
+		76403CA227CF112100084A7A /* WDChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76403CB127CF133400084A7A /* WDMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDMainViewController.swift; sourceTree = "<group>"; };
+		76403CB427CF13E800084A7A /* WDBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDBaseViewController.swift; sourceTree = "<group>"; };
+		76403CB727CF144500084A7A /* WDChatMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMessageViewController.swift; sourceTree = "<group>"; };
+		76403CB927CF160500084A7A /* WDChatRelationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatRelationViewController.swift; sourceTree = "<group>"; };
+		76403CBD27CF168800084A7A /* WDChatFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatFindViewController.swift; sourceTree = "<group>"; };
+		76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineViewController.swift; sourceTree = "<group>"; };
+		76403CC427CF20AA00084A7A /* WDChatConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76403C7927CF111F00084A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76403C8F27CF112100084A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76403C9927CF112100084A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76403C7327CF111F00084A7A = {
+			isa = PBXGroup;
+			children = (
+				76403C7E27CF111F00084A7A /* WDChat */,
+				76403C9527CF112100084A7A /* WDChatTests */,
+				76403C9F27CF112100084A7A /* WDChatUITests */,
+				76403C7D27CF111F00084A7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76403C7D27CF111F00084A7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76403C7C27CF111F00084A7A /* WDChat.app */,
+				76403C9227CF112100084A7A /* WDChatTests.xctest */,
+				76403C9C27CF112100084A7A /* WDChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76403C7E27CF111F00084A7A /* WDChat */ = {
+			isa = PBXGroup;
+			children = (
+				76403C7F27CF111F00084A7A /* AppDelegate.swift */,
+				76403C8127CF111F00084A7A /* SceneDelegate.swift */,
+				76403C8327CF111F00084A7A /* ViewController.swift */,
+				76403CC227CF208100084A7A /* Common */,
+				76403CBF27CF16A100084A7A /* Mine */,
+				76403CBC27CF165200084A7A /* Find */,
+				76403CBB27CF161E00084A7A /* Relation */,
+				76403CB627CF141D00084A7A /* Message */,
+				76403CB327CF13AA00084A7A /* Base */,
+				76403C8527CF111F00084A7A /* Main.storyboard */,
+				76403C8827CF112000084A7A /* Assets.xcassets */,
+				76403C8A27CF112000084A7A /* LaunchScreen.storyboard */,
+				76403C8D27CF112000084A7A /* Info.plist */,
+			);
+			path = WDChat;
+			sourceTree = "<group>";
+		};
+		76403C9527CF112100084A7A /* WDChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				76403C9627CF112100084A7A /* WDChatTests.swift */,
+			);
+			path = WDChatTests;
+			sourceTree = "<group>";
+		};
+		76403C9F27CF112100084A7A /* WDChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76403CA027CF112100084A7A /* WDChatUITests.swift */,
+				76403CA227CF112100084A7A /* WDChatUITestsLaunchTests.swift */,
+			);
+			path = WDChatUITests;
+			sourceTree = "<group>";
+		};
+		76403CB327CF13AA00084A7A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				76403CB127CF133400084A7A /* WDMainViewController.swift */,
+				76403CB427CF13E800084A7A /* WDBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		76403CB627CF141D00084A7A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				76403CB727CF144500084A7A /* WDChatMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		76403CBB27CF161E00084A7A /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				76403CB927CF160500084A7A /* WDChatRelationViewController.swift */,
+			);
+			path = Relation;
+			sourceTree = "<group>";
+		};
+		76403CBC27CF165200084A7A /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				76403CBD27CF168800084A7A /* WDChatFindViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		76403CBF27CF16A100084A7A /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		76403CC227CF208100084A7A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76403CC327CF208900084A7A /* Helper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		76403CC327CF208900084A7A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				76403CC427CF20AA00084A7A /* WDChatConstants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76403C7B27CF111F00084A7A /* WDChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76403CA627CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChat" */;
+			buildPhases = (
+				76403C7827CF111F00084A7A /* Sources */,
+				76403C7927CF111F00084A7A /* Frameworks */,
+				76403C7A27CF111F00084A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WDChat;
+			productName = WDChat;
+			productReference = 76403C7C27CF111F00084A7A /* WDChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76403C9127CF112100084A7A /* WDChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76403CA927CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChatTests" */;
+			buildPhases = (
+				76403C8E27CF112100084A7A /* Sources */,
+				76403C8F27CF112100084A7A /* Frameworks */,
+				76403C9027CF112100084A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76403C9427CF112100084A7A /* PBXTargetDependency */,
+			);
+			name = WDChatTests;
+			productName = WDChatTests;
+			productReference = 76403C9227CF112100084A7A /* WDChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76403C9B27CF112100084A7A /* WDChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76403CAC27CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChatUITests" */;
+			buildPhases = (
+				76403C9827CF112100084A7A /* Sources */,
+				76403C9927CF112100084A7A /* Frameworks */,
+				76403C9A27CF112100084A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76403C9E27CF112100084A7A /* PBXTargetDependency */,
+			);
+			name = WDChatUITests;
+			productName = WDChatUITests;
+			productReference = 76403C9C27CF112100084A7A /* WDChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76403C7427CF111F00084A7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					76403C7B27CF111F00084A7A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					76403C9127CF112100084A7A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 76403C7B27CF111F00084A7A;
+					};
+					76403C9B27CF112100084A7A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 76403C7B27CF111F00084A7A;
+					};
+				};
+			};
+			buildConfigurationList = 76403C7727CF111F00084A7A /* Build configuration list for PBXProject "WDChat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76403C7327CF111F00084A7A;
+			productRefGroup = 76403C7D27CF111F00084A7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76403C7B27CF111F00084A7A /* WDChat */,
+				76403C9127CF112100084A7A /* WDChatTests */,
+				76403C9B27CF112100084A7A /* WDChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76403C7A27CF111F00084A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */,
+				76403C8927CF112000084A7A /* Assets.xcassets in Resources */,
+				76403C8727CF111F00084A7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76403C9027CF112100084A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76403C9A27CF112100084A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76403C7827CF111F00084A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76403CC127CF16BA00084A7A /* WDChatMineViewController.swift in Sources */,
+				76403CBA27CF160500084A7A /* WDChatRelationViewController.swift in Sources */,
+				76403CB227CF133400084A7A /* WDMainViewController.swift in Sources */,
+				76403C8427CF111F00084A7A /* ViewController.swift in Sources */,
+				76403CB527CF13E800084A7A /* WDBaseViewController.swift in Sources */,
+				76403CBE27CF168800084A7A /* WDChatFindViewController.swift in Sources */,
+				76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */,
+				76403C8227CF111F00084A7A /* SceneDelegate.swift in Sources */,
+				76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */,
+				76403CB827CF144500084A7A /* WDChatMessageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76403C8E27CF112100084A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76403C9727CF112100084A7A /* WDChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76403C9827CF112100084A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76403CA127CF112100084A7A /* WDChatUITests.swift in Sources */,
+				76403CA327CF112100084A7A /* WDChatUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76403C9427CF112100084A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76403C7B27CF111F00084A7A /* WDChat */;
+			targetProxy = 76403C9327CF112100084A7A /* PBXContainerItemProxy */;
+		};
+		76403C9E27CF112100084A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76403C7B27CF111F00084A7A /* WDChat */;
+			targetProxy = 76403C9D27CF112100084A7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76403C8527CF111F00084A7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76403C8627CF111F00084A7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76403C8A27CF112000084A7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76403C8B27CF112000084A7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76403CA427CF112100084A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76403CA527CF112100084A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76403CA727CF112100084A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WDChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76403CA827CF112100084A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WDChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76403CAA27CF112100084A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDChat.app/WDChat";
+			};
+			name = Debug;
+		};
+		76403CAB27CF112100084A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WDChat.app/WDChat";
+			};
+			name = Release;
+		};
+		76403CAD27CF112100084A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WDChat;
+			};
+			name = Debug;
+		};
+		76403CAE27CF112100084A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.znxh.WDChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WDChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76403C7727CF111F00084A7A /* Build configuration list for PBXProject "WDChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76403CA427CF112100084A7A /* Debug */,
+				76403CA527CF112100084A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76403CA627CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76403CA727CF112100084A7A /* Debug */,
+				76403CA827CF112100084A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76403CA927CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76403CAA27CF112100084A7A /* Debug */,
+				76403CAB27CF112100084A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76403CAC27CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76403CAD27CF112100084A7A /* Debug */,
+				76403CAE27CF112100084A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76403C7427CF111F00084A7A /* Project object */;
+}
