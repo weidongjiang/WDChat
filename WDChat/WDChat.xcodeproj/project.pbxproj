@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C7F27CF111F00084A7A /* AppDelegate.swift */; };
-		76403C8227CF111F00084A7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C8127CF111F00084A7A /* SceneDelegate.swift */; };
-		76403C8427CF111F00084A7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C8327CF111F00084A7A /* ViewController.swift */; };
-		76403C8727CF111F00084A7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8527CF111F00084A7A /* Main.storyboard */; };
 		76403C8927CF112000084A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8827CF112000084A7A /* Assets.xcassets */; };
 		76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8A27CF112000084A7A /* LaunchScreen.storyboard */; };
 		76403C9727CF112100084A7A /* WDChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C9627CF112100084A7A /* WDChatTests.swift */; };
@@ -45,9 +42,6 @@
 /* Begin PBXFileReference section */
 		76403C7C27CF111F00084A7A /* WDChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76403C7F27CF111F00084A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76403C8127CF111F00084A7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76403C8327CF111F00084A7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		76403C8627CF111F00084A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76403C8827CF112000084A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76403C8B27CF112000084A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76403C8D27CF112000084A7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,15 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				76403C7F27CF111F00084A7A /* AppDelegate.swift */,
-				76403C8127CF111F00084A7A /* SceneDelegate.swift */,
-				76403C8327CF111F00084A7A /* ViewController.swift */,
 				76403CC227CF208100084A7A /* Common */,
 				76403CBF27CF16A100084A7A /* Mine */,
 				76403CBC27CF165200084A7A /* Find */,
 				76403CBB27CF161E00084A7A /* Relation */,
 				76403CB627CF141D00084A7A /* Message */,
 				76403CB327CF13AA00084A7A /* Base */,
-				76403C8527CF111F00084A7A /* Main.storyboard */,
 				76403C8827CF112000084A7A /* Assets.xcassets */,
 				76403C8A27CF112000084A7A /* LaunchScreen.storyboard */,
 				76403C8D27CF112000084A7A /* Info.plist */,
@@ -310,7 +301,6 @@
 			files = (
 				76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */,
 				76403C8927CF112000084A7A /* Assets.xcassets in Resources */,
-				76403C8727CF111F00084A7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,11 +328,9 @@
 				76403CC127CF16BA00084A7A /* WDChatMineViewController.swift in Sources */,
 				76403CBA27CF160500084A7A /* WDChatRelationViewController.swift in Sources */,
 				76403CB227CF133400084A7A /* WDMainViewController.swift in Sources */,
-				76403C8427CF111F00084A7A /* ViewController.swift in Sources */,
 				76403CB527CF13E800084A7A /* WDBaseViewController.swift in Sources */,
 				76403CBE27CF168800084A7A /* WDChatFindViewController.swift in Sources */,
 				76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */,
-				76403C8227CF111F00084A7A /* SceneDelegate.swift in Sources */,
 				76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */,
 				76403CB827CF144500084A7A /* WDChatMessageViewController.swift in Sources */,
 			);
@@ -381,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		76403C8527CF111F00084A7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76403C8627CF111F00084A7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		76403C8A27CF112000084A7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -528,7 +508,7 @@
 				INFOPLIST_FILE = WDChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,7 +536,7 @@
 				INFOPLIST_FILE = WDChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
