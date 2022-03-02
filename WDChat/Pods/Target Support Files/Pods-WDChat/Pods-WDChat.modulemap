@@ -1,0 +1,6 @@
+framework module Pods_WDChat {
+  umbrella header "Pods-WDChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
