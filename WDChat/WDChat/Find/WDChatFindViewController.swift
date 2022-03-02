@@ -12,6 +12,5 @@ class WDChatFindViewController :WDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .brown
     }
 }

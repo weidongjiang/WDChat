@@ -13,7 +13,7 @@ class WDBaseViewController: UIViewController {
         super.viewDidLoad()
         
         
-        self.view.backgroundColor = .yellow
+        self.view.backgroundColor = WDChatCoreUtils.WDChatColorHexValue(0xF2F2F2, alpha: 1.0)
         
         
     }

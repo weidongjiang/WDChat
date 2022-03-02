@@ -19,6 +19,11 @@ class WDMainViewController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tabBar.tintColor = .black
+        self.tabBar.barTintColor = .white
+        self.tabBar.shadowImage = UIImage()
+        self.tabBar.backgroundColor = .white
+        
         // 添加
         addChildVC()
         
@@ -32,7 +37,7 @@ class WDMainViewController: UITabBarController, UITabBarControllerDelegate {
         
         if messageVC == nil {
             messageVC = WDChatMessageViewController()
-            messageVC.tabBarItem = UITabBarItem(title: "消息", image: UIImage.init(named: "wd_msg_icon_tabbar"), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s"))
+            messageVC.tabBarItem = UITabBarItem(title: "消息", image: UIImage.init(named: "wd_msg_icon_tabbar")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
             messageVC.title = "消息"
             
             navController = UINavigationController(rootViewController: messageVC)
@@ -42,7 +47,7 @@ class WDMainViewController: UITabBarController, UITabBarControllerDelegate {
         
         if relationVC == nil {
             relationVC = WDChatRelationViewController()
-            relationVC.tabBarItem = UITabBarItem(title: "联系人", image: UIImage.init(named: "wd_msg_icon_tabbar"), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s"))
+            relationVC.tabBarItem = UITabBarItem(title: "联系人", image: UIImage.init(named: "wd_msg_icon_tabbar")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
             relationVC.title = "联系人"
             navController = UINavigationController(rootViewController: relationVC)
             self.addChild(navController)
@@ -51,7 +56,7 @@ class WDMainViewController: UITabBarController, UITabBarControllerDelegate {
         
         if findVC == nil {
             findVC = WDChatFindViewController()
-            findVC.tabBarItem = UITabBarItem(title: "发现", image: UIImage.init(named: "wd_msg_icon_tabbar"), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s"))
+            findVC.tabBarItem = UITabBarItem(title: "发现", image: UIImage.init(named: "wd_msg_icon_tabbar")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
             findVC.title = "发现"
             navController = UINavigationController(rootViewController: findVC)
             self.addChild(navController)
@@ -59,8 +64,9 @@ class WDMainViewController: UITabBarController, UITabBarControllerDelegate {
         
         if mineVC == nil {
             mineVC = WDChatMineViewController()
-            mineVC.tabBarItem = UITabBarItem(title: "我的", image: UIImage.init(named: "wd_msg_icon_tabbar"), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s"))
+            mineVC.tabBarItem = UITabBarItem(title: "我的", image: UIImage.init(named: "wd_msg_icon_tabbar")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage.init(named: "wd_msg_icon_tabbar_s")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
             mineVC.title = "我的"
+            
             navController = UINavigationController(rootViewController: mineVC)
             self.addChild(navController)
         }
