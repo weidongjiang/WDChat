@@ -32,7 +32,7 @@ class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
         self.tableView.register(WDChatMessageViewCell.self, forCellReuseIdentifier:WDChatMessageViewCellID)
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.backgroundColor = .red
+        self.tableView.backgroundColor = .white
         self.tableView.bounces = false
         self.tableView.showsVerticalScrollIndicator = false
         self.tableView.separatorStyle = .none
