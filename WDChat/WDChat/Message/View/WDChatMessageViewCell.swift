@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import SnapKit
+import Kingfisher
 
 let WDChatMessageViewCellID = "WDChatMessageViewCellID"
 
@@ -93,6 +94,8 @@ class WDChatMessageViewCell: UITableViewCell {
             make.height.equalTo(0.5)
         }
         
+        let url = URL(string: "http://medocdn.huoying666.com/images/20210918/4c259bcc1621c2afb78ee24777232fd9/4c259bcc16.jpg")
+        self.iconImageView.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil, completionHandler: nil)
         
     }
     
