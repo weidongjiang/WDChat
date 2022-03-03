@@ -1,16 +1,38 @@
 PODS:
+  - Alamofire (5.5.0)
+  - ObjectMapper (4.2.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper
+  - RxCocoa
+  - RxSwift
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: a7ea3c14a96a559898245a2292cc5d4ae34cf195
+PODFILE CHECKSUM: 9b238e5a2c9c285d129323aaa9c278a58d1c8b5c
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
