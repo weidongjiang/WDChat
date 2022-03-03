@@ -21,6 +21,7 @@ class WDChatMessageViewCell: UITableViewCell {
     var nameLabel : UILabel!
     var messageLabel : UILabel!
     var timeLabel : UILabel!
+    var lineView : UIView!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -83,6 +84,14 @@ class WDChatMessageViewCell: UITableViewCell {
             make.right.equalTo(self.contentView).offset(-iconImage_m)
         }
         
+        self.lineView = UIView.init()
+        self.lineView.backgroundColor = WDChatCoreUtils.ColorHexValue(0x000000, alpha: 0.2)
+        self.contentView.addSubview(self.lineView)
+        self.lineView.snp.makeConstraints { make in
+            make.left.equalTo(self.nameLabel)
+            make.bottom.right.equalTo(self.contentView)
+            make.height.equalTo(0.5)
+        }
         
         
     }
