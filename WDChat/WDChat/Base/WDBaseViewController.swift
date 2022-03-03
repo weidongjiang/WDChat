@@ -7,13 +7,14 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class WDBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        self.view.backgroundColor = WDChatCoreUtils.WDChatColorHexValue(0xF2F2F2, alpha: 1.0)
+        self.view.backgroundColor = WDChatCoreUtils.ColorHexValue(0xF2F2F2, alpha: 1.0)
         
         
     }
