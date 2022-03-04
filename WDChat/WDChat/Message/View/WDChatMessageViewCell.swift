@@ -62,7 +62,7 @@ class WDChatMessageViewCell: UITableViewCell {
         }
         
         self.nameLabel = UILabel.init()
-        self.nameLabel.text = "开启新的世界开启新的世界开启新的世界开启新的世界"
+        self.nameLabel.text = "开启新的世界"
         self.nameLabel.textColor = UIColor.black
         self.nameLabel.font = UIFont.systemFont(ofSize: 16)
         self.contentView.addSubview(self.nameLabel)
