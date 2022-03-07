@@ -42,7 +42,7 @@ class WDChatMessageViewCell: UITableViewCell {
         self.iconImageView = UIImageView.init()
         self.iconImageView.layer.cornerRadius = 2
         self.iconImageView.layer.masksToBounds = true
-        self.iconImageView.backgroundColor = .green
+        self.iconImageView.backgroundColor = .white
         self.contentView.addSubview(self.iconImageView)
         self.iconImageView.snp.makeConstraints { make in
             make.left.equalTo(self.contentView).offset(iconImage_m)
@@ -95,7 +95,7 @@ class WDChatMessageViewCell: UITableViewCell {
         }
         
         let url = URL(string: "http://medocdn.huoying666.com/images/20210918/4c259bcc1621c2afb78ee24777232fd9/4c259bcc16.jpg")
-        self.iconImageView.kf.setImage(with: url, placeholder: nil, options: nil, progressBlock: nil, completionHandler: nil)
+        self.iconImageView.kf.setImage(with: url, placeholder: UIImage.init(named: "usericon_default"), options: nil, progressBlock: nil, completionHandler: nil)
         
     }
     
