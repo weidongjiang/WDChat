@@ -18,7 +18,7 @@ class WDChatFindViewCell: UITableViewCell {
         set {
             self.iconImageView.image = UIImage.init(named: newValue!.iconImageName)
             self.titleLabel.text = newValue!.title
-            
+            self.lineView.isHidden = newValue!.isHiddenline
         }
         get {
             return self.model
@@ -29,7 +29,7 @@ class WDChatFindViewCell: UITableViewCell {
     var iconImageView:UIImageView!
     var titleLabel:UILabel!
     var arrowImageView:UIImageView!
-    
+    var lineView:UIView!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -78,5 +78,13 @@ class WDChatFindViewCell: UITableViewCell {
             make.height.equalTo(12.5)
         }
         
+        self.lineView = UIView()
+        self.lineView.backgroundColor = UIColor.wd_colorWithHexString(hex: "#000000", alpha: 0.3)
+        self.contentView.addSubview(self.lineView)
+        self.lineView.snp.makeConstraints { make in
+            make.bottom.right.equalTo(self.contentView)
+            make.height.equalTo(0.5)
+            make.left.equalTo(self.titleLabel.snp.left)
+        }
     }
 }

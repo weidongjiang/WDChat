@@ -21,6 +21,7 @@ class WDChatFindViewModel:NSObject {
         let model_1_1 = WDChatFindModel()
         model_1_1.iconImageName = "ppt"
         model_1_1.title = "ppt"
+        model_1_1.isHiddenline = true
         
         tempArray1.add(model_1_1)
         
@@ -29,11 +30,13 @@ class WDChatFindViewModel:NSObject {
         let model_2_1 = WDChatFindModel()
         model_2_1.iconImageName = "excerl"
         model_2_1.title = "excerl"
+        model_2_1.isHiddenline = false
         
         let model_2_2 = WDChatFindModel()
         model_2_2.iconImageName = "txt"
         model_2_2.title = "txt"
-        
+        model_2_2.isHiddenline = true
+
         tempArray2.add(model_2_1)
         tempArray2.add(model_2_2)
 
@@ -43,11 +46,13 @@ class WDChatFindViewModel:NSObject {
         let model_3_1 = WDChatFindModel()
         model_3_1.iconImageName = "iconfont-wenjian"
         model_3_1.title = "file"
-        
+        model_3_1.isHiddenline = false
+
         let model_3_2 = WDChatFindModel()
         model_3_2.iconImageName = "pdf"
         model_3_2.title = "pdf"
-        
+        model_3_2.isHiddenline = true
+
         tempArray3.add(model_3_1)
         tempArray3.add(model_3_2)
         
@@ -56,11 +61,13 @@ class WDChatFindViewModel:NSObject {
         let model_4_1 = WDChatFindModel()
         model_4_1.iconImageName = "shipin"
         model_4_1.title = "shipin"
-        
+        model_4_1.isHiddenline = false
+
         let model_4_2 = WDChatFindModel()
         model_4_2.iconImageName = "word"
         model_4_2.title = "word"
-        
+        model_4_2.isHiddenline = true
+
         tempArray4.add(model_4_1)
         tempArray4.add(model_4_2)
         
@@ -70,7 +77,8 @@ class WDChatFindViewModel:NSObject {
         let model_5_1 = WDChatFindModel()
         model_5_1.iconImageName = "ppt"
         model_5_1.title = "ppt"
-        
+        model_5_1.isHiddenline = true
+
         tempArray5.add(model_5_1)
         
         
@@ -80,11 +88,13 @@ class WDChatFindViewModel:NSObject {
         let model_6_1 = WDChatFindModel()
         model_6_1.iconImageName = "iconfont-wenjian"
         model_6_1.title = "file"
-        
+        model_6_1.isHiddenline = false
+
         let model_6_2 = WDChatFindModel()
         model_6_2.iconImageName = "pdf"
         model_6_2.title = "pdf"
-        
+        model_6_2.isHiddenline = true
+
         tempArray6.add(model_6_1)
         tempArray6.add(model_6_2)
         
@@ -93,7 +103,8 @@ class WDChatFindViewModel:NSObject {
         let model_7_1 = WDChatFindModel()
         model_7_1.iconImageName = "shipin"
         model_7_1.title = "shipin"
-        
+        model_7_1.isHiddenline = true
+
         tempArray7.add(model_7_1)
         
         tempArray.add(tempArray1.copy() as! NSArray)

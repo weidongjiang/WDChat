@@ -12,5 +12,6 @@ class WDChatFindModel: NSObject {
     var iconImageName:String!
     var title:String!
     var itemid:String!
+    var isHiddenline:Bool!
     
 }
