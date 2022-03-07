@@ -105,6 +105,19 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
         let rows:NSArray = self.dataArray[indexPath.section] as! NSArray
         let model:WDChatFindModel = rows[indexPath.row] as! WDChatFindModel
         
+        switch model.itemid {
+        case WDChatFindItemid_1_1:
+            print(WDChatFindItemid_1_1)
+        case WDChatFindItemid_2_1:
+            print(WDChatFindItemid_2_1)
+
+        case WDChatFindItemid_2_2:
+            print(WDChatFindItemid_2_2)
+
+        default:
+            print(WDChatFindItemid_2_2)
+
+        }
         
     }
     
