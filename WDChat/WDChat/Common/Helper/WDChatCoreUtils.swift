@@ -9,14 +9,9 @@ import Foundation
 import UIKit
 
 
+let mainColor = UIColor.wd_colorWithHexString(hex: "#F2F2F2", alpha: 1.0)
 
-class WDChatCoreUtils: NSObject {
-    
-    static func ColorHexValue(_ hex:UInt ,alpha:CGFloat) -> UIColor {
-        
-        return UIColor(red: CGFloat((hex & 0xFF0000) >> 16) / 255.0, green: CGFloat((hex & 0x00FF00) >> 8) / 255.0, blue: CGFloat(hex & 0x0000FF) / 255.0, alpha:CGFloat(alpha))
-    }
-    
-    
-    
-}
+
+
+
+

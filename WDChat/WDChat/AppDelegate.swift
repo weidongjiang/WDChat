@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let titleTextAttributes = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18.0),NSAttributedString.Key.foregroundColor : UIColor.black]
         
         UINavigationBar.appearance().titleTextAttributes = titleTextAttributes as [NSAttributedString.Key : Any]
-        UINavigationBar.appearance().barTintColor = WDChatCoreUtils.ColorHexValue(0xF2F2F2, alpha: 1.0)
+        UINavigationBar.appearance().barTintColor = mainColor
     
         
     }

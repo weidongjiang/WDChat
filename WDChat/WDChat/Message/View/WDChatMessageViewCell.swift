@@ -69,7 +69,7 @@ class WDChatMessageViewCell: UITableViewCell {
         self.nameLabel.snp.makeConstraints { make in
             make.top.equalTo(self.iconImageView)
             make.left.equalTo(self.iconImageView.snp.right).offset(iconImage_m)
-            make.right.equalTo(self.timeLabel.snp.left).offset(-iconImage_m)
+            make.right.lessThanOrEqualTo(self.timeLabel.snp.left).offset(-iconImage_m)
         }
         
         
@@ -86,7 +86,7 @@ class WDChatMessageViewCell: UITableViewCell {
         }
         
         self.lineView = UIView.init()
-        self.lineView.backgroundColor = WDChatCoreUtils.ColorHexValue(0x000000, alpha: 0.2)
+        self.lineView.backgroundColor = mainColor
         self.contentView.addSubview(self.lineView)
         self.lineView.snp.makeConstraints { make in
             make.left.equalTo(self.nameLabel)

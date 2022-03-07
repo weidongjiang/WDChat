@@ -6,11 +6,23 @@
 //
 
 import Foundation
-
+import UIKit
 
 class WDChatFindViewController :WDBaseViewController {
+    
+    var chatFindView : WDChatFindView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let chatFindViewH = KWDChatScreenHeight - KWDNavBarHeight - KWDTabBarHeight
+
+        chatFindView = WDChatFindView.init(frame: CGRect.init(x: 0, y: KWDNavBarHeight, width: KWDChatScreenWidth, height: chatFindViewH))
+        self.view.addSubview(chatFindView)
+        
     }
+    
+    
+    
 }
