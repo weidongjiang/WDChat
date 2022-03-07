@@ -7,10 +7,22 @@
 
 import Foundation
 import UIKit
+import CoreMedia
 
 class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
     
     var tableView : UITableView!
+    var viewModel : WDChatMessageViewModel? {
+        get {
+            return WDChatMessageViewModel()
+        }
+    }
+    var dataArray : NSMutableArray!
+//    ! {
+//        get {
+//            return NSMutableArray.init()
+//        }
+//    }
     
     
     override init(frame: CGRect) {
@@ -18,11 +30,26 @@ class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
         
         initChatMessageViewUI()
         
-        self.tableView.reloadData()
+        self.dataArray = NSMutableArray()
+        
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    func updateChatMessageData() {
+        
+        let tempData = self.viewModel?.crateMessageData()
+        
+        self.dataArray.removeAllObjects()
+        for model in tempData as! [WDChatMessageModel] {
+            self.dataArray.add(model)
+        }
+        self.tableView.reloadData()
+        
     }
     
     
@@ -46,7 +73,7 @@ class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return self.dataArray.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -64,6 +91,10 @@ class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMessageViewCellID, for: indexPath) as! WDChatMessageViewCell
+        
+        let model = self.dataArray[indexPath.row]
+        
+        cell.model = model as? WDChatMessageModel;
         
         return cell
         

@@ -15,6 +15,20 @@ let WDChatMessageViewCellID = "WDChatMessageViewCellID"
 
 class WDChatMessageViewCell: UITableViewCell {
     
+    var model : WDChatMessageModel? {
+        set {
+            self.nameLabel.text = newValue?.name
+            self.timeLabel.text = newValue?.time
+            self.messageLabel.text = newValue?.message
+            
+            let url = URL(string: newValue?.iconAvater ?? "")
+            self.iconImageView.kf.setImage(with: url, placeholder: UIImage.init(named: "usericon_default"), options: nil, progressBlock: nil, completionHandler: nil)
+        }
+        get {
+            return self.model
+        }
+    }
+    
     let iconImage_w_h = 40
     let iconImage_m = 10
     
@@ -52,7 +66,6 @@ class WDChatMessageViewCell: UITableViewCell {
         
         
         self.timeLabel = UILabel.init()
-        self.timeLabel.text = "12-12 12:12"
         self.timeLabel.textColor = UIColor.gray
         self.timeLabel.font = UIFont.systemFont(ofSize: 14)
         self.contentView.addSubview(self.timeLabel)
@@ -62,7 +75,6 @@ class WDChatMessageViewCell: UITableViewCell {
         }
         
         self.nameLabel = UILabel.init()
-        self.nameLabel.text = "开启新的世界"
         self.nameLabel.textColor = UIColor.black
         self.nameLabel.font = UIFont.systemFont(ofSize: 16)
         self.contentView.addSubview(self.nameLabel)
@@ -75,7 +87,6 @@ class WDChatMessageViewCell: UITableViewCell {
         
         
         self.messageLabel = UILabel.init()
-        self.messageLabel.text = "来玩新的app"
         self.messageLabel.textColor = UIColor.gray
         self.messageLabel.font = UIFont.systemFont(ofSize: 14)
         self.contentView.addSubview(self.messageLabel)
@@ -94,8 +105,7 @@ class WDChatMessageViewCell: UITableViewCell {
             make.height.equalTo(0.5)
         }
         
-        let url = URL(string: "http://medocdn.huoying666.com/images/20210918/4c259bcc1621c2afb78ee24777232fd9/4c259bcc16.jpg")
-        self.iconImageView.kf.setImage(with: url, placeholder: UIImage.init(named: "usericon_default"), options: nil, progressBlock: nil, completionHandler: nil)
+        
         
     }
     

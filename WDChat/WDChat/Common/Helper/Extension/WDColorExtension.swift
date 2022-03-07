@@ -10,12 +10,23 @@ import UIKit
 
 extension UIColor {
     
+    /// 获取 RGB 对应的color
+    /// - Parameters:
+    ///   - red: red
+    ///   - green: green
+    ///   - blue: blue
+    ///   - alpha: 透明度
+    /// - Returns: color
     class func wd_colorValue(red:CGFloat, green:CGFloat, blue:CGFloat, alpha:CGFloat) -> UIColor {
         return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha)
     }
     
     
-    
+    /// 获取hex对应的color
+    /// - Parameters:
+    ///   - hex: 如： “#FFFFFF”
+    ///   - alpha: 透明度
+    /// - Returns: color
     class func wd_colorWithHexString(hex:String,alpha:CGFloat)-> UIColor {
         var hexString = hex
         

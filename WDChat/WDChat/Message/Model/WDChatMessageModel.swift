@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+
+class WDChatMessageModel:NSObject {
+    
+    var iconAvater:String?
+    var name:String?
+    var time:String?
+    var message:String?
+    
+}
