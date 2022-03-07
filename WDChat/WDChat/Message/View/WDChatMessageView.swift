@@ -18,11 +18,7 @@ class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
         }
     }
     var dataArray : NSMutableArray!
-//    ! {
-//        get {
-//            return NSMutableArray.init()
-//        }
-//    }
+
     
     
     override init(frame: CGRect) {

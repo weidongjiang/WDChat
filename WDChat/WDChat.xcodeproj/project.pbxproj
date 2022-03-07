@@ -17,6 +17,9 @@
 		7636CFEB27D5AA8C00BD7CEE /* WDChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFEA27D5AA8C00BD7CEE /* WDChatMessageModel.swift */; };
 		7636CFED27D5AA9700BD7CEE /* WDChatMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFEC27D5AA9700BD7CEE /* WDChatMessageViewModel.swift */; };
 		7636CFEF27D5DE9F00BD7CEE /* WDColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFEE27D5DE9F00BD7CEE /* WDColorExtension.swift */; };
+		7636CFF627D6101400BD7CEE /* WDChatFindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFF527D6101400BD7CEE /* WDChatFindViewModel.swift */; };
+		7636CFF827D6101D00BD7CEE /* WDChatFindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFF727D6101D00BD7CEE /* WDChatFindModel.swift */; };
+		7636CFFC27D613F300BD7CEE /* WDChatHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */; };
 		76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C7F27CF111F00084A7A /* AppDelegate.swift */; };
 		76403C8927CF112000084A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8827CF112000084A7A /* Assets.xcassets */; };
 		76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8A27CF112000084A7A /* LaunchScreen.storyboard */; };
@@ -65,6 +68,9 @@
 		7636CFEA27D5AA8C00BD7CEE /* WDChatMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMessageModel.swift; sourceTree = "<group>"; };
 		7636CFEC27D5AA9700BD7CEE /* WDChatMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMessageViewModel.swift; sourceTree = "<group>"; };
 		7636CFEE27D5DE9F00BD7CEE /* WDColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDColorExtension.swift; sourceTree = "<group>"; };
+		7636CFF527D6101400BD7CEE /* WDChatFindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatFindViewModel.swift; sourceTree = "<group>"; };
+		7636CFF727D6101D00BD7CEE /* WDChatFindModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatFindModel.swift; sourceTree = "<group>"; };
+		7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatHeader.swift; sourceTree = "<group>"; };
 		76403C7C27CF111F00084A7A /* WDChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76403C7F27CF111F00084A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76403C8827CF112000084A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +175,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		7636CFF127D60FE900BD7CEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7636CFF527D6101400BD7CEE /* WDChatFindViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7636CFF227D60FF000BD7CEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7636CFF727D6101D00BD7CEE /* WDChatFindModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		76403C7327CF111F00084A7A = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +218,7 @@
 			children = (
 				76403C7F27CF111F00084A7A /* AppDelegate.swift */,
 				7636CFE327D2254B00BD7CEE /* LaunchScreen.storyboard */,
+				7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */,
 				76403CC227CF208100084A7A /* Common */,
 				76403CBF27CF16A100084A7A /* Mine */,
 				76403CBC27CF165200084A7A /* Find */,
@@ -258,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				76403CBD27CF168800084A7A /* WDChatFindViewController.swift */,
+				7636CFF227D60FF000BD7CEE /* Model */,
+				7636CFF127D60FE900BD7CEE /* ViewModel */,
 				7636CFE527D5A91300BD7CEE /* View */,
 			);
 			path = Find;
@@ -544,7 +569,9 @@
 				76403CC127CF16BA00084A7A /* WDChatMineViewController.swift in Sources */,
 				76403CBA27CF160500084A7A /* WDChatRelationViewController.swift in Sources */,
 				76403CB227CF133400084A7A /* WDMainViewController.swift in Sources */,
+				7636CFF827D6101D00BD7CEE /* WDChatFindModel.swift in Sources */,
 				76403CB527CF13E800084A7A /* WDBaseViewController.swift in Sources */,
+				7636CFFC27D613F300BD7CEE /* WDChatHeader.swift in Sources */,
 				7636CFEB27D5AA8C00BD7CEE /* WDChatMessageModel.swift in Sources */,
 				76403CBE27CF168800084A7A /* WDChatFindViewController.swift in Sources */,
 				761B225827D0927B001CD44E /* WDChatMessageViewCell.swift in Sources */,
@@ -553,6 +580,7 @@
 				76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */,
 				7636CFE927D5A98100BD7CEE /* WDChatFindViewCell.swift in Sources */,
 				76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */,
+				7636CFF627D6101400BD7CEE /* WDChatFindViewModel.swift in Sources */,
 				76403CB827CF144500084A7A /* WDChatMessageViewController.swift in Sources */,
 				7636CFE727D5A92B00BD7CEE /* WDChatFindView.swift in Sources */,
 				761B225127CF5570001CD44E /* WDChatCoreUtils.swift in Sources */,
@@ -729,6 +757,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WDChat";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WDChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -758,6 +788,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WDChat";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WDChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

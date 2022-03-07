@@ -12,19 +12,39 @@ import UIKit
 class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
     
     var tableView : UITableView!
-    
+    var viewModel : WDChatFindViewModel! {
+        get {
+            return WDChatFindViewModel()
+        }
+    }
+    var dataArray : NSMutableArray!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         initChatFindViewUI()
         
-        self.tableView.reloadData()
+        self.dataArray = NSMutableArray()
+        
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    func getChatFindViewData() {
+        
+        let temps = self.viewModel!.creatChatFindViewData()
+        
+        for obj in temps {
+            self.dataArray.add(obj)
+        }
+        
+        self.tableView.reloadData()
+    }
+    
     
     func initChatFindViewUI() {
         
@@ -45,11 +65,12 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
     
     // MARK: - UITableViewDelegate UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return self.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        let rows = self.dataArray[section] as! [NSArray]
+        return rows.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -59,7 +80,7 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerView = UIView.init();
-        headerView.backgroundColor = .red
+        headerView.backgroundColor = mainColor
         return headerView
         
     }
@@ -69,12 +90,23 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
 
         let cell = tableView.dequeueReusableCell(withIdentifier:WDChatFindViewCellID, for: indexPath) as! WDChatFindViewCell
         
+        let rows:NSArray = self.dataArray[indexPath.section] as! NSArray
+        let model:WDChatFindModel = rows[indexPath.row] as! WDChatFindModel
+        
+        cell.model = model
+        
         return cell
         
     }
     
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let rows:NSArray = self.dataArray[indexPath.section] as! NSArray
+        let model:WDChatFindModel = rows[indexPath.row] as! WDChatFindModel
+        
+        
+    }
     
     
     
