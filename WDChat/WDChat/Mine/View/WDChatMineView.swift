@@ -46,11 +46,12 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
     
     func initChatMineViewUI() {
         
-        self.backgroundColor = .clear
+        self.backgroundColor = .white
         
         
         self.tableView = UITableView.init(frame: self.bounds, style: UITableView.Style.grouped)
         self.tableView.register(WDChatMineViewCell.self, forCellReuseIdentifier:WDChatMineViewCellID)
+        self.tableView.register(WDChatMineViewHeaderCell.self, forCellReuseIdentifier:WDChatMineViewHeaderCellID)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.backgroundColor = mainColor
@@ -59,6 +60,7 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
         self.tableView.sectionHeaderHeight = 10;
         self.tableView.sectionFooterHeight = 0.001;
         self.tableView.automaticallyAdjustsScrollIndicatorInsets = false
+        self.tableView.contentInset = UIEdgeInsets.init(top: -KWDNavBarHeight, left: 0, bottom: 0, right: 0)
         self.addSubview(self.tableView)
         
         
@@ -76,11 +78,16 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 200
+        }
         return 50
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
+        if section == 0 {
+            return nil
+        }
         let headerView = UIView.init();
         headerView.backgroundColor = mainColor
         return headerView
@@ -90,6 +97,14 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewHeaderCellID, for: indexPath) as! WDChatMineViewHeaderCell
+
+            
+            return cell
+
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewCellID, for: indexPath) as! WDChatMineViewCell
         
         let rows:NSArray = self.dataArray[indexPath.section] as! NSArray

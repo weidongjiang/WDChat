@@ -15,6 +15,7 @@ class WDChatMineViewController: WDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .white
         self.navigationController?.navigationBar.isHidden = true
         
         initChatMineVCUI()
