@@ -1,20 +1,19 @@
 //
-//  WDChatFindView.swift
+//  WDChatMineView.swift
 //  WDChat
 //
-//  Created by 蒋伟东 on 2022/3/7.
+//  Created by 蒋伟东 on 2022/3/8.
 //
 
 import Foundation
 import UIKit
 
-
-class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
+class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
     
     var tableView : UITableView!
-    var viewModel : WDChatFindViewModel! {
+    var viewModel : WDChatMineViewModel! {
         get {
-            return WDChatFindViewModel()
+            return WDChatMineViewModel()
         }
     }
     var dataArray : NSMutableArray!
@@ -22,11 +21,11 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        initChatFindViewUI()
-        
         self.dataArray = NSMutableArray()
+
+        initChatMineViewUI()
         
-        
+        getChatMineData()
     }
     
     required init?(coder: NSCoder) {
@@ -34,22 +33,24 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
     }
     
     
-    func getChatFindViewData() {
+    func getChatMineData() {
         
-        let temps = self.viewModel!.creatChatFindViewData()
+        let data = self.viewModel!.getChatMineViewData()
         
-        for obj in temps {
-            self.dataArray.add(obj)
+        for item in data {
+            self.dataArray.add(item)
         }
         
         self.tableView.reloadData()
     }
     
-    
-    func initChatFindViewUI() {
+    func initChatMineViewUI() {
+        
+        self.backgroundColor = .clear
+        
         
         self.tableView = UITableView.init(frame: self.bounds, style: UITableView.Style.grouped)
-        self.tableView.register(WDChatFindViewCell.self, forCellReuseIdentifier:WDChatFindViewCellID)
+        self.tableView.register(WDChatMineViewCell.self, forCellReuseIdentifier:WDChatMineViewCellID)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.backgroundColor = mainColor
@@ -62,6 +63,7 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
         
         
     }
+    
     
     // MARK: - UITableViewDelegate UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -88,10 +90,10 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier:WDChatFindViewCellID, for: indexPath) as! WDChatFindViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewCellID, for: indexPath) as! WDChatMineViewCell
         
         let rows:NSArray = self.dataArray[indexPath.section] as! NSArray
-        let model:WDChatFindModel = rows[indexPath.row] as! WDChatFindModel
+        let model:WDChatMineModel = rows[indexPath.row] as! WDChatMineModel
         
         cell.model = model
         
@@ -103,21 +105,22 @@ class WDChatFindView : UIView,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let rows:NSArray = self.dataArray[indexPath.section] as! NSArray
-        let model:WDChatFindModel = rows[indexPath.row] as! WDChatFindModel
+        let model:WDChatMineModel = rows[indexPath.row] as! WDChatMineModel
         
-        switch model.itemid {
-        case .friendsList:
-            print(WDChatFindItemid.friendsList)
-        case .live:
-            print(WDChatFindItemid.live)
-
-        case .video:
-            print(WDChatFindItemid.video)
-
-        default:
-            print("default")
-
-        }
+//        switch model.itemid {
+//        case WDChatFindItemid_1_1:
+//            print(WDChatFindItemid_1_1)
+//        case WDChatFindItemid_2_1:
+//            print(WDChatFindItemid_2_1)
+//            print(WDChatFindItemid_2_1)
+//
+//        case WDChatFindItemid_2_2:
+//            print(WDChatFindItemid_2_2)
+//
+//        default:
+//            print(WDChatFindItemid_2_2)
+//
+//        }
         
     }
     

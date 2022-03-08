@@ -20,6 +20,10 @@
 		7636CFF627D6101400BD7CEE /* WDChatFindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFF527D6101400BD7CEE /* WDChatFindViewModel.swift */; };
 		7636CFF827D6101D00BD7CEE /* WDChatFindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFF727D6101D00BD7CEE /* WDChatFindModel.swift */; };
 		7636CFFC27D613F300BD7CEE /* WDChatHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */; };
+		7636D00127D6F67800BD7CEE /* WDChatMineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00027D6F67800BD7CEE /* WDChatMineView.swift */; };
+		7636D00327D6F68400BD7CEE /* WDChatMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00227D6F68400BD7CEE /* WDChatMineViewModel.swift */; };
+		7636D00527D6F68F00BD7CEE /* WDChatMineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00427D6F68F00BD7CEE /* WDChatMineModel.swift */; };
+		7636D00727D6F87E00BD7CEE /* WDChatMineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00627D6F87E00BD7CEE /* WDChatMineViewCell.swift */; };
 		76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C7F27CF111F00084A7A /* AppDelegate.swift */; };
 		76403C8927CF112000084A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8827CF112000084A7A /* Assets.xcassets */; };
 		76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8A27CF112000084A7A /* LaunchScreen.storyboard */; };
@@ -71,6 +75,10 @@
 		7636CFF527D6101400BD7CEE /* WDChatFindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatFindViewModel.swift; sourceTree = "<group>"; };
 		7636CFF727D6101D00BD7CEE /* WDChatFindModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatFindModel.swift; sourceTree = "<group>"; };
 		7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatHeader.swift; sourceTree = "<group>"; };
+		7636D00027D6F67800BD7CEE /* WDChatMineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineView.swift; sourceTree = "<group>"; };
+		7636D00227D6F68400BD7CEE /* WDChatMineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineViewModel.swift; sourceTree = "<group>"; };
+		7636D00427D6F68F00BD7CEE /* WDChatMineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineModel.swift; sourceTree = "<group>"; };
+		7636D00627D6F87E00BD7CEE /* WDChatMineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineViewCell.swift; sourceTree = "<group>"; };
 		76403C7C27CF111F00084A7A /* WDChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76403C7F27CF111F00084A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76403C8827CF112000084A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +199,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7636CFFD27D6F65E00BD7CEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7636D00027D6F67800BD7CEE /* WDChatMineView.swift */,
+				7636D00627D6F87E00BD7CEE /* WDChatMineViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7636CFFE27D6F66400BD7CEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7636D00227D6F68400BD7CEE /* WDChatMineViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7636CFFF27D6F66A00BD7CEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7636D00427D6F68F00BD7CEE /* WDChatMineModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		76403C7327CF111F00084A7A = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +325,9 @@
 			isa = PBXGroup;
 			children = (
 				76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */,
+				7636CFFF27D6F66A00BD7CEE /* Model */,
+				7636CFFE27D6F66400BD7CEE /* ViewModel */,
+				7636CFFD27D6F65E00BD7CEE /* View */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -567,7 +603,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				76403CC127CF16BA00084A7A /* WDChatMineViewController.swift in Sources */,
+				7636D00527D6F68F00BD7CEE /* WDChatMineModel.swift in Sources */,
 				76403CBA27CF160500084A7A /* WDChatRelationViewController.swift in Sources */,
+				7636D00127D6F67800BD7CEE /* WDChatMineView.swift in Sources */,
 				76403CB227CF133400084A7A /* WDMainViewController.swift in Sources */,
 				7636CFF827D6101D00BD7CEE /* WDChatFindModel.swift in Sources */,
 				76403CB527CF13E800084A7A /* WDBaseViewController.swift in Sources */,
@@ -581,8 +619,10 @@
 				7636CFE927D5A98100BD7CEE /* WDChatFindViewCell.swift in Sources */,
 				76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */,
 				7636CFF627D6101400BD7CEE /* WDChatFindViewModel.swift in Sources */,
+				7636D00327D6F68400BD7CEE /* WDChatMineViewModel.swift in Sources */,
 				76403CB827CF144500084A7A /* WDChatMessageViewController.swift in Sources */,
 				7636CFE727D5A92B00BD7CEE /* WDChatFindView.swift in Sources */,
+				7636D00727D6F87E00BD7CEE /* WDChatMineViewCell.swift in Sources */,
 				761B225127CF5570001CD44E /* WDChatCoreUtils.swift in Sources */,
 				7636CFED27D5AA9700BD7CEE /* WDChatMessageViewModel.swift in Sources */,
 			);
