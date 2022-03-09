@@ -97,23 +97,18 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewHeaderCellID, for: indexPath) as! WDChatMineViewHeaderCell
-
-            
-            return cell
-
-        }
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewCellID, for: indexPath) as! WDChatMineViewCell
-        
         let rows:NSArray = self.dataArray[indexPath.section] as! NSArray
         let model:WDChatMineModel = rows[indexPath.row] as! WDChatMineModel
         
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewHeaderCellID, for: indexPath) as! WDChatMineViewHeaderCell
+            cell.headerModel = model
+            return cell
+        }
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewCellID, for: indexPath) as! WDChatMineViewCell
         cell.model = model
-        
         return cell
-        
     }
     
     

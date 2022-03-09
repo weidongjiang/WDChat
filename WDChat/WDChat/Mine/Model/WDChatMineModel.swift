@@ -24,5 +24,8 @@ class WDChatMineModel:NSObject {
     var itemid:WDChatMineItemid!
     var isHiddenline:Bool!
     
+    var iconAvaterUrlString:String!
+    var chatName:String!
+    var chatid:String!
     
 }

@@ -21,6 +21,9 @@ class WDChatMineViewModel:NSObject {
         mineModel.title = "mine"
         mineModel.itemid = .mine
         mineModel.isHiddenline = true
+        mineModel.iconAvaterUrlString = "http://medocdn.huoying666.com/images/20210918/4c259bcc1621c2afb78ee24777232fd9/4c259bcc16.jpg"
+        mineModel.chatName = "每天都是新的一天"
+        mineModel.chatid = "999999999999999999999999"
         
         time_1.add(mineModel)
         
