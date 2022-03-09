@@ -25,6 +25,10 @@
 		7636D00527D6F68F00BD7CEE /* WDChatMineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00427D6F68F00BD7CEE /* WDChatMineModel.swift */; };
 		7636D00727D6F87E00BD7CEE /* WDChatMineViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00627D6F87E00BD7CEE /* WDChatMineViewCell.swift */; };
 		7636D00927D7276600BD7CEE /* WDChatMineViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00827D7276600BD7CEE /* WDChatMineViewHeaderCell.swift */; };
+		7636D00C27D87B8200BD7CEE /* WDScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D00B27D87B8100BD7CEE /* WDScanViewController.swift */; };
+		7636D01127D8813F00BD7CEE /* WDScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01027D8813F00BD7CEE /* WDScanView.swift */; };
+		7636D01327D8814800BD7CEE /* WDScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01227D8814800BD7CEE /* WDScanViewModel.swift */; };
+		7636D01527D8815300BD7CEE /* WDScanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01427D8815300BD7CEE /* WDScanModel.swift */; };
 		76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C7F27CF111F00084A7A /* AppDelegate.swift */; };
 		76403C8927CF112000084A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8827CF112000084A7A /* Assets.xcassets */; };
 		76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8A27CF112000084A7A /* LaunchScreen.storyboard */; };
@@ -81,6 +85,10 @@
 		7636D00427D6F68F00BD7CEE /* WDChatMineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineModel.swift; sourceTree = "<group>"; };
 		7636D00627D6F87E00BD7CEE /* WDChatMineViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineViewCell.swift; sourceTree = "<group>"; };
 		7636D00827D7276600BD7CEE /* WDChatMineViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineViewHeaderCell.swift; sourceTree = "<group>"; };
+		7636D00B27D87B8100BD7CEE /* WDScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDScanViewController.swift; sourceTree = "<group>"; };
+		7636D01027D8813F00BD7CEE /* WDScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDScanView.swift; sourceTree = "<group>"; };
+		7636D01227D8814800BD7CEE /* WDScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDScanViewModel.swift; sourceTree = "<group>"; };
+		7636D01427D8815300BD7CEE /* WDScanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDScanModel.swift; sourceTree = "<group>"; };
 		76403C7C27CF111F00084A7A /* WDChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76403C7F27CF111F00084A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76403C8827CF112000084A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -227,6 +235,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7636D00A27D87B5C00BD7CEE /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				7636D00B27D87B8100BD7CEE /* WDScanViewController.swift */,
+				7636D00F27D8812C00BD7CEE /* Model */,
+				7636D00E27D8812300BD7CEE /* ViewModel */,
+				7636D00D27D8811900BD7CEE /* View */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		7636D00D27D8811900BD7CEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7636D01027D8813F00BD7CEE /* WDScanView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7636D00E27D8812300BD7CEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7636D01227D8814800BD7CEE /* WDScanViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7636D00F27D8812C00BD7CEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7636D01427D8815300BD7CEE /* WDScanModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		76403C7327CF111F00084A7A = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +298,7 @@
 				76403C7F27CF111F00084A7A /* AppDelegate.swift */,
 				7636CFE327D2254B00BD7CEE /* LaunchScreen.storyboard */,
 				7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */,
+				7636D00A27D87B5C00BD7CEE /* Scan */,
 				76403CC227CF208100084A7A /* Common */,
 				76403CBF27CF16A100084A7A /* Mine */,
 				76403CBC27CF165200084A7A /* Find */,
@@ -617,6 +661,7 @@
 				76403CBE27CF168800084A7A /* WDChatFindViewController.swift in Sources */,
 				761B225827D0927B001CD44E /* WDChatMessageViewCell.swift in Sources */,
 				761B225627D06AEB001CD44E /* WDChatMessageView.swift in Sources */,
+				7636D01127D8813F00BD7CEE /* WDScanView.swift in Sources */,
 				7636CFEF27D5DE9F00BD7CEE /* WDColorExtension.swift in Sources */,
 				76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */,
 				7636CFE927D5A98100BD7CEE /* WDChatFindViewCell.swift in Sources */,
@@ -625,9 +670,12 @@
 				7636D00927D7276600BD7CEE /* WDChatMineViewHeaderCell.swift in Sources */,
 				7636D00327D6F68400BD7CEE /* WDChatMineViewModel.swift in Sources */,
 				76403CB827CF144500084A7A /* WDChatMessageViewController.swift in Sources */,
+				7636D01527D8815300BD7CEE /* WDScanModel.swift in Sources */,
 				7636CFE727D5A92B00BD7CEE /* WDChatFindView.swift in Sources */,
 				7636D00727D6F87E00BD7CEE /* WDChatMineViewCell.swift in Sources */,
 				761B225127CF5570001CD44E /* WDChatCoreUtils.swift in Sources */,
+				7636D01327D8814800BD7CEE /* WDScanViewModel.swift in Sources */,
+				7636D00C27D87B8200BD7CEE /* WDScanViewController.swift in Sources */,
 				7636CFED27D5AA9700BD7CEE /* WDChatMessageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

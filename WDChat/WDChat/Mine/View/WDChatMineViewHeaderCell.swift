@@ -14,6 +14,9 @@ let WDChatMineViewHeaderCellID = "WDChatMineViewHeaderCellID"
 
 class WDChatMineViewHeaderCell : UITableViewCell {
     
+    typealias avaterDidBlock = (WDChatMineModel) -> Void
+    
+    var iconAvaterDidBlock : avaterDidBlock?
     
     var headerModel : WDChatMineModel? {
         set {
@@ -44,6 +47,12 @@ class WDChatMineViewHeaderCell : UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         initMineViewHeaderCellUI()
+        
+        
+        let tap = UITapGestureRecognizer()
+        tap.addTarget(self, action: #selector(iconAvaterTap))
+        self.iconAvaterImageView.addGestureRecognizer(tap)
+
     }
     
     required init?(coder: NSCoder) {
@@ -58,6 +67,7 @@ class WDChatMineViewHeaderCell : UITableViewCell {
         self.iconAvaterImageView = UIImageView()
         self.iconAvaterImageView.layer.cornerRadius = 4
         self.iconAvaterImageView.layer.masksToBounds = true
+        self.iconAvaterImageView.isUserInteractionEnabled = true
         self.contentView.addSubview(self.iconAvaterImageView)
         self.iconAvaterImageView.snp.makeConstraints { make in
             make.left.equalTo(self.contentView).offset(20)
@@ -124,4 +134,8 @@ class WDChatMineViewHeaderCell : UITableViewCell {
         }
     }
     
+    
+    @objc func iconAvaterTap() {
+//        iconAvaterDidBlock!(headerModel!)
+    }
 }

@@ -103,6 +103,9 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier:WDChatMineViewHeaderCellID, for: indexPath) as! WDChatMineViewHeaderCell
             cell.headerModel = model
+            cell.iconAvaterDidBlock = { avaterDidBlock in
+                print("iconAvaterDidBlock")
+            }
             return cell
         }
         
