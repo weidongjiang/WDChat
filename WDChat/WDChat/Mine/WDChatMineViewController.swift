@@ -21,6 +21,10 @@ class WDChatMineViewController: WDBaseViewController {
         initChatMineVCUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
     
     func initChatMineVCUI() {
         
@@ -29,7 +33,15 @@ class WDChatMineViewController: WDBaseViewController {
         self.mineView = WDChatMineView.init(frame: CGRect.init(x: 0, y: 0, width: KWDChatScreenWidth, height: mineViewH))
         self.view.addSubview(self.mineView)
         
-        
+        self.mineView.mineViewAvaterDidBlock = { [weak self] (mineModel,avaterImageView) -> Void in
+            
+            print(mineModel,avaterImageView)
+            
+            let vc = WDScanViewController()
+            self?.navigationController?.pushViewController(vc, animated: true)
+            self?.tabBarController?.tabBar.isHidden = true
+            
+        }
     }
     
     

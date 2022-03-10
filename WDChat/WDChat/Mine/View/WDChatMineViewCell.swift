@@ -13,14 +13,17 @@ let WDChatMineViewCellID = "WDChatMineViewCellID"
 
 class WDChatMineViewCell:UITableViewCell {
     
+    var _model:WDChatMineModel?
+    
     var model:WDChatMineModel! {
         set {
+            _model = newValue
             self.iconImageView.image = UIImage.init(named: newValue!.iconImageName)
             self.titleLabel.text = newValue!.title
             self.lineView.isHidden = newValue!.isHiddenline
         }
         get {
-            return self.model
+            return _model
         }
     }
     

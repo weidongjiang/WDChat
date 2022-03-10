@@ -14,14 +14,16 @@ let WDChatFindViewCellID = "WDChatFindViewCellID"
 
 class WDChatFindViewCell: UITableViewCell {
     
+    var _model: WDChatFindModel?
     var model: WDChatFindModel? {
         set {
+            _model = newValue
             self.iconImageView.image = UIImage.init(named: newValue!.iconImageName)
             self.titleLabel.text = newValue!.title
             self.lineView.isHidden = newValue!.isHiddenline
         }
         get {
-            return self.model
+            return _model
         }
     }
     

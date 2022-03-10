@@ -10,7 +10,7 @@ import UIKit
 
 class WDScanViewController : WDBaseViewController {
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +18,12 @@ class WDScanViewController : WDBaseViewController {
         self.view.backgroundColor = UIColor.wd_colorWithHexString(hex: "#000000", alpha: 1.0)
         
         
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+
     }
     
 }

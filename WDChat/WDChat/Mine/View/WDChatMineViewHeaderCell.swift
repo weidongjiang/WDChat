@@ -12,14 +12,18 @@ import Kingfisher
 
 let WDChatMineViewHeaderCellID = "WDChatMineViewHeaderCellID"
 
+typealias avaterDidBlock = (WDChatMineModel,UIImageView) -> Void
+
 class WDChatMineViewHeaderCell : UITableViewCell {
     
-    typealias avaterDidBlock = (WDChatMineModel) -> Void
     
     var iconAvaterDidBlock : avaterDidBlock?
     
+    var _headerModel : WDChatMineModel?
+    
     var headerModel : WDChatMineModel? {
         set {
+            _headerModel = newValue
             
             let url = URL(string: newValue?.iconAvaterUrlString ?? "")
             self.iconAvaterImageView.kf.setImage(with: url, placeholder: UIImage.init(named: "usericon_default"), options: nil, completionHandler: nil)
@@ -30,7 +34,7 @@ class WDChatMineViewHeaderCell : UITableViewCell {
             
         }
         get {
-            return self.headerModel
+            return _headerModel
         }
     }
     
@@ -47,7 +51,6 @@ class WDChatMineViewHeaderCell : UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         initMineViewHeaderCellUI()
-        
         
         let tap = UITapGestureRecognizer()
         tap.addTarget(self, action: #selector(iconAvaterTap))
@@ -136,6 +139,7 @@ class WDChatMineViewHeaderCell : UITableViewCell {
     
     
     @objc func iconAvaterTap() {
-//        iconAvaterDidBlock!(headerModel!)
+        print("iconAvaterTap")
+        iconAvaterDidBlock!((_headerModel as? WDChatMineModel)!,iconAvaterImageView)
     }
 }

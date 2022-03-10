@@ -15,8 +15,11 @@ let WDChatMessageViewCellID = "WDChatMessageViewCellID"
 
 class WDChatMessageViewCell: UITableViewCell {
     
+    var _model : WDChatMessageModel?
     var model : WDChatMessageModel? {
         set {
+            _model = newValue
+            
             self.nameLabel.text = newValue?.name
             self.timeLabel.text = newValue?.time
             self.messageLabel.text = newValue?.message
@@ -25,7 +28,7 @@ class WDChatMessageViewCell: UITableViewCell {
             self.iconImageView.kf.setImage(with: url, placeholder: UIImage.init(named: "usericon_default"), options: nil, progressBlock: nil, completionHandler: nil)
         }
         get {
-            return self.model
+            return _model
         }
     }
     

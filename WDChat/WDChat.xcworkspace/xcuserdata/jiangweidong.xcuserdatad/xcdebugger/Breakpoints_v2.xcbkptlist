@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B918303B-8D3E-4774-A225-477BAACBF8E9"
+            uuid = "9AED51F1-E5FE-4B79-9803-763839B33632"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WDChat/Mine/View/WDChatMineView.swift"
+            filePath = "WDChat/Mine/View/WDChatMineViewHeaderCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "iconAvaterTap()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
