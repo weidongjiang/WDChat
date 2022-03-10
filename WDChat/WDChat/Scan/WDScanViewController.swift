@@ -15,14 +15,20 @@ class WDScanViewController : WDBaseViewController,
     
     
     
+    lazy var dataArray : NSMutableArray = {
+        return NSMutableArray()
+    }()
     
-    
+    lazy var viewModel : WDScanViewModel = {
+        return WDScanViewModel()
+    }()
     
     lazy var collectionView : UICollectionView = {
         
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 0;
         layout.minimumInteritemSpacing = 0;
+        layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: KWDChatScreenWidth, height: KWDChatScreenHeight)
         
         let collectionView = UICollectionView.init(frame: CGRect(x: 0, y: 0, width: KWDChatScreenWidth, height: KWDChatScreenHeight), collectionViewLayout: layout)
@@ -32,8 +38,10 @@ class WDScanViewController : WDBaseViewController,
         collectionView.bounces = false
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(WDScanViewImageCell.self, forCellWithReuseIdentifier: WDScanViewImageCellID)
         collectionView.contentInsetAdjustmentBehavior = .never
+        collectionView.register(WDScanViewImageCell.self, forCellWithReuseIdentifier: WDScanViewImageCellID)
+        collectionView.register(WDScanViewVideoCell.self, forCellWithReuseIdentifier: WDScanViewVideoCellID)
+
         
         return collectionView
         
@@ -47,10 +55,15 @@ class WDScanViewController : WDBaseViewController,
         self.tabBarController?.tabBar.isHidden = true
         
         
-        
         self.view.backgroundColor = UIColor.wd_colorWithHexString(hex: "#000000", alpha: 1.0)
         
         self.view.addSubview(collectionView)
+        
+        
+        let datas = viewModel.getTempDatas()
+        for item in datas {
+            self.dataArray.add(item)
+        }
         collectionView.reloadData()
         
     }
@@ -59,23 +72,34 @@ class WDScanViewController : WDBaseViewController,
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = false
 
+        
+        
     }
     
     
     
-    // MARK: -
+    // MARK: - UICollectionViewDelegate UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return self.dataArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewImageCellID, for: indexPath)
+        let model = self.dataArray[indexPath.item] as! WDScanModel
         
+        if model.itemType == .image {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewImageCellID, for: indexPath)
+            
+            return cell
+            
+        }else if model.itemType == .video {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewVideoCellID, for: indexPath)
+            
+            return cell
+        }
         
-        
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         return cell
-        
+
     }
 }

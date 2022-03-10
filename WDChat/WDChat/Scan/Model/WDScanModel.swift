@@ -6,3 +6,25 @@
 //
 
 import Foundation
+import SwiftUI
+
+enum WDScanType {
+    case image
+    case video
+}
+
+class WDScanModel : NSObject {
+    
+    var itemType : WDScanType!
+    var imageUrlString : String!
+    var videoPlayUrlString : String!
+    var videoPlayCoverUrlString : String!
+
+    
+    override init() {
+        super.init()
+        
+        
+    }
+    
+}
