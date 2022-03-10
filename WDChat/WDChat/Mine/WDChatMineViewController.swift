@@ -8,22 +8,25 @@
 import Foundation
 import UIKit
 
-class WDChatMineViewController: WDBaseViewController {
+class WDChatMineViewController: WDMainBaseViewController {
     
     var mineView:WDChatMineView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .white
-        self.navigationController?.navigationBar.isHidden = true
         
         initChatMineVCUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         self.tabBarController?.tabBar.isHidden = false
+        self.view.backgroundColor = .white
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.navigationBar.isTranslucent = true
+        
     }
     
     func initChatMineVCUI() {

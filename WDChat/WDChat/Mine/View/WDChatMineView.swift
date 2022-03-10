@@ -63,10 +63,11 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
         self.tableView.backgroundColor = mainColor
         self.tableView.showsVerticalScrollIndicator = false
         self.tableView.separatorStyle = .none
-        self.tableView.sectionHeaderHeight = 10;
-        self.tableView.sectionFooterHeight = 0.001;
-        self.tableView.automaticallyAdjustsScrollIndicatorInsets = false
-        self.tableView.contentInset = UIEdgeInsets.init(top: -KWDNavBarHeight, left: 0, bottom: 0, right: 0)
+//        self.tableView.sectionHeaderHeight = 10;
+//        self.tableView.sectionFooterHeight = 0.001;
+        self.tableView.automaticallyAdjustsScrollIndicatorInsets = true
+        self.tableView.contentInsetAdjustmentBehavior = .never
+//        self.tableView.contentInset = UIEdgeInsets.init(top: -KWDNavBarHeight, left: 0, bottom: 0, right: 0)
         self.addSubview(self.tableView)
         
         
@@ -92,14 +93,26 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0 {
-            return nil
+            return UIView()
         }
-        let headerView = UIView.init();
+        let headerView = UIView.init(frame: CGRect(x: 0, y: 0, width: KWDChatScreenWidth, height: 10));
         headerView.backgroundColor = mainColor
         return headerView
         
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0.01
+        }
+        return 10
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 

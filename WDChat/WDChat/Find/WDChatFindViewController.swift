@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class WDChatFindViewController :WDBaseViewController {
+class WDChatFindViewController :WDMainBaseViewController {
     
     var chatFindView : WDChatFindView!
     

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class WDChatMessageViewController :WDBaseViewController {
+class WDChatMessageViewController :WDMainBaseViewController {
     
     var messageView : WDChatMessageView!
     

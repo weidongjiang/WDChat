@@ -8,7 +8,7 @@
 import Foundation
 
 
-class WDChatRelationViewController : WDBaseViewController {
+class WDChatRelationViewController : WDMainBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
