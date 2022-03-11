@@ -15,6 +15,7 @@ class WDScanViewController : WDBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.title = ""
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
         

@@ -15,7 +15,6 @@ class WDChatMineViewController: WDMainBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         initChatMineVCUI()
     }
     
@@ -26,7 +25,14 @@ class WDChatMineViewController: WDMainBaseViewController {
         self.view.backgroundColor = .white
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.isTranslucent = true
+        self.title = ""
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+
     }
     
     func initChatMineVCUI() {
