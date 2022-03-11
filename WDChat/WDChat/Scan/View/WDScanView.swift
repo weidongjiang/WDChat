@@ -81,6 +81,7 @@ class WDScanView : UIView,
             
         }else if model.itemType == .video {
             let cell : WDScanViewVideoCell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewVideoCellID, for: indexPath) as! WDScanViewVideoCell
+            cell.videoModel = model
             
             return cell
         }

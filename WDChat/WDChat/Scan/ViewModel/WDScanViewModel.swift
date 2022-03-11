@@ -26,7 +26,8 @@ class WDScanViewModel : NSObject {
         
         let model_2 = WDScanModel()
         model_2.itemType = .video
-        
+        model_2.imageUrlString = "http://medocdn.huoying666.com/images/20210918/4c259bcc1621c2afb78ee24777232fd9/4c259bcc16.jpg"
+        model_2.videoPlayUrlString = "http://medocdn.huoying666.com/videos/20220310/feccae1d65648e2ad9b0c77a5a557084/feccae1d65.mp4"
         
         temps.add(model_2)
         temps.add(model_1)

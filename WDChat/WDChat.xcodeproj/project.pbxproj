@@ -32,6 +32,8 @@
 		7636D01727DA041F00BD7CEE /* WDScanViewImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01627DA041E00BD7CEE /* WDScanViewImageCell.swift */; };
 		7636D01927DA095200BD7CEE /* WDMainBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01827DA095200BD7CEE /* WDMainBaseViewController.swift */; };
 		7636D01B27DA0EE900BD7CEE /* WDScanViewVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01A27DA0EE900BD7CEE /* WDScanViewVideoCell.swift */; };
+		7636D01E27DAF99900BD7CEE /* WDVideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01D27DAF99900BD7CEE /* WDVideoPlayView.swift */; };
+		7636D02027DAFC7100BD7CEE /* WDPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636D01F27DAFC7100BD7CEE /* WDPlayerView.swift */; };
 		76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403C7F27CF111F00084A7A /* AppDelegate.swift */; };
 		76403C8927CF112000084A7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8827CF112000084A7A /* Assets.xcassets */; };
 		76403C8C27CF112000084A7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76403C8A27CF112000084A7A /* LaunchScreen.storyboard */; };
@@ -95,6 +97,8 @@
 		7636D01627DA041E00BD7CEE /* WDScanViewImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDScanViewImageCell.swift; sourceTree = "<group>"; };
 		7636D01827DA095200BD7CEE /* WDMainBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDMainBaseViewController.swift; sourceTree = "<group>"; };
 		7636D01A27DA0EE900BD7CEE /* WDScanViewVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDScanViewVideoCell.swift; sourceTree = "<group>"; };
+		7636D01D27DAF99900BD7CEE /* WDVideoPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDVideoPlayView.swift; sourceTree = "<group>"; };
+		7636D01F27DAFC7100BD7CEE /* WDPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDPlayerView.swift; sourceTree = "<group>"; };
 		76403C7C27CF111F00084A7A /* WDChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76403C7F27CF111F00084A7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76403C8827CF112000084A7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -278,6 +282,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7636D01C27DAF97C00BD7CEE /* VideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				7636D01D27DAF99900BD7CEE /* WDVideoPlayView.swift */,
+				7636D01F27DAFC7100BD7CEE /* WDPlayerView.swift */,
+			);
+			path = VideoPlay;
+			sourceTree = "<group>";
+		};
 		76403C7327CF111F00084A7A = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +319,7 @@
 				76403C7F27CF111F00084A7A /* AppDelegate.swift */,
 				7636CFE327D2254B00BD7CEE /* LaunchScreen.storyboard */,
 				7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */,
+				7636D01C27DAF97C00BD7CEE /* VideoPlay */,
 				7636D00A27D87B5C00BD7CEE /* Scan */,
 				76403CC227CF208100084A7A /* Common */,
 				76403CBF27CF16A100084A7A /* Mine */,
@@ -671,12 +685,14 @@
 				76403CBE27CF168800084A7A /* WDChatFindViewController.swift in Sources */,
 				761B225827D0927B001CD44E /* WDChatMessageViewCell.swift in Sources */,
 				761B225627D06AEB001CD44E /* WDChatMessageView.swift in Sources */,
+				7636D02027DAFC7100BD7CEE /* WDPlayerView.swift in Sources */,
 				7636D01127D8813F00BD7CEE /* WDScanView.swift in Sources */,
 				7636CFEF27D5DE9F00BD7CEE /* WDColorExtension.swift in Sources */,
 				76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */,
 				7636D01727DA041F00BD7CEE /* WDScanViewImageCell.swift in Sources */,
 				7636CFE927D5A98100BD7CEE /* WDChatFindViewCell.swift in Sources */,
 				76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */,
+				7636D01E27DAF99900BD7CEE /* WDVideoPlayView.swift in Sources */,
 				7636CFF627D6101400BD7CEE /* WDChatFindViewModel.swift in Sources */,
 				7636D01927DA095200BD7CEE /* WDMainBaseViewController.swift in Sources */,
 				7636D00927D7276600BD7CEE /* WDChatMineViewHeaderCell.swift in Sources */,
