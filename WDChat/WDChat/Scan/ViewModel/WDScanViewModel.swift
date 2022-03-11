@@ -22,7 +22,7 @@ class WDScanViewModel : NSObject {
         
         let model_1 = WDScanModel()
         model_1.itemType = .image
-        
+        model_1.imageUrlString = "http://medocdn.huoying666.com/images/20210918/4c259bcc1621c2afb78ee24777232fd9/4c259bcc16.jpg"
         
         let model_2 = WDScanModel()
         model_2.itemType = .video

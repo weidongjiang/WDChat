@@ -74,12 +74,13 @@ class WDScanView : UIView,
         let model = self.dataArray[indexPath.item] as! WDScanModel
         
         if model.itemType == .image {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewImageCellID, for: indexPath)
+            let cell : WDScanViewImageCell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewImageCellID, for: indexPath) as! WDScanViewImageCell
+            cell.imageModel = model
             
             return cell
             
         }else if model.itemType == .video {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewVideoCellID, for: indexPath)
+            let cell : WDScanViewVideoCell = collectionView.dequeueReusableCell(withReuseIdentifier: WDScanViewVideoCellID, for: indexPath) as! WDScanViewVideoCell
             
             return cell
         }
