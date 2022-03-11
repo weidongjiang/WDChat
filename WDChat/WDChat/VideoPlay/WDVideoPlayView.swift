@@ -82,7 +82,7 @@ class WDVideoPlayView : UIView {
         
     }
     
-    func playWithUrl(url : URL) {
+    public func playWithUrl(url : URL) {
         
         
         self.url = url
