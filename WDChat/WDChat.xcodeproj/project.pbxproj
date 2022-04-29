@@ -47,6 +47,7 @@
 		76403CBE27CF168800084A7A /* WDChatFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CBD27CF168800084A7A /* WDChatFindViewController.swift */; };
 		76403CC127CF16BA00084A7A /* WDChatMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */; };
 		76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CC427CF20AA00084A7A /* WDChatConstants.swift */; };
+		76E89ED4281B82B10045317D /* WDLiveGiftPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E89ED3281B82B10045317D /* WDLiveGiftPlay.swift */; };
 		A9B01F4F522A4C1E1ADDDF27 /* Pods_WDChat_WDChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC46AB70FBED6AD6CD2A7171 /* Pods_WDChat_WDChatUITests.framework */; };
 		EA6677B41F8AEFEAD5A91711 /* Pods_WDChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4627042D19A01D2153FF565D /* Pods_WDChatTests.framework */; };
 /* End PBXBuildFile section */
@@ -116,6 +117,7 @@
 		76403CBD27CF168800084A7A /* WDChatFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatFindViewController.swift; sourceTree = "<group>"; };
 		76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineViewController.swift; sourceTree = "<group>"; };
 		76403CC427CF20AA00084A7A /* WDChatConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatConstants.swift; sourceTree = "<group>"; };
+		76E89ED3281B82B10045317D /* WDLiveGiftPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDLiveGiftPlay.swift; sourceTree = "<group>"; };
 		8233192811FB2BC3E6DE98EE /* Pods-WDChat-WDChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChat-WDChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-WDChat-WDChatUITests/Pods-WDChat-WDChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8651E236AEFC06DB02359DDC /* Pods-WDChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChatTests.debug.xcconfig"; path = "Target Support Files/Pods-WDChatTests/Pods-WDChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FDD32D1D3BC5413A9B1DA9 /* Pods-WDChat-WDChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChat-WDChatUITests.release.xcconfig"; path = "Target Support Files/Pods-WDChat-WDChatUITests/Pods-WDChat-WDChatUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				76403C7F27CF111F00084A7A /* AppDelegate.swift */,
 				7636CFE327D2254B00BD7CEE /* LaunchScreen.storyboard */,
 				7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */,
+				76E89ED3281B82B10045317D /* WDLiveGiftPlay.swift */,
 				7636D01C27DAF97C00BD7CEE /* VideoPlay */,
 				7636D00A27D87B5C00BD7CEE /* Scan */,
 				76403CC227CF208100084A7A /* Common */,
@@ -704,6 +707,7 @@
 				761B225127CF5570001CD44E /* WDChatCoreUtils.swift in Sources */,
 				7636D01327D8814800BD7CEE /* WDScanViewModel.swift in Sources */,
 				7636D00C27D87B8200BD7CEE /* WDScanViewController.swift in Sources */,
+				76E89ED4281B82B10045317D /* WDLiveGiftPlay.swift in Sources */,
 				7636CFED27D5AA9700BD7CEE /* WDChatMessageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

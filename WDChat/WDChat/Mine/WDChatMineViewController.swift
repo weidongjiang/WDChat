@@ -46,6 +46,8 @@ class WDChatMineViewController: WDMainBaseViewController {
             
             print(mineModel,avaterImageView)
             
+//            var vc = LNSVGAViewController()
+
             let vc = WDScanViewController()
             self?.navigationController?.pushViewController(vc, animated: true)
             self?.tabBarController?.tabBar.isHidden = true

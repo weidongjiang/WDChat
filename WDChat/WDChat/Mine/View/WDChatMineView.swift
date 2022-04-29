@@ -140,6 +140,7 @@ class WDChatMineView:UIView,UITableViewDelegate,UITableViewDataSource {
         let rows:NSArray = self.dataArray[indexPath.section] as! NSArray
         let model:WDChatMineModel = rows[indexPath.row] as! WDChatMineModel
         
+        
 //        switch model.itemid {
 //        case WDChatFindItemid_1_1:
 //            print(WDChatFindItemid_1_1)
