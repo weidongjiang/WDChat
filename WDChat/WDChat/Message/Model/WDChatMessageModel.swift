@@ -8,7 +8,7 @@
 import Foundation
 
 
-class WDChatMessageModel:NSObject {
+class WDChatMessageModel:Item {
     
     var iconAvater:String?
     var name:String?

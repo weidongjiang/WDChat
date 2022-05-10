@@ -48,8 +48,8 @@
 		76403CC127CF16BA00084A7A /* WDChatMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */; };
 		76403CC527CF20AA00084A7A /* WDChatConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76403CC427CF20AA00084A7A /* WDChatConstants.swift */; };
 		76E89ED4281B82B10045317D /* WDLiveGiftPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E89ED3281B82B10045317D /* WDLiveGiftPlay.swift */; };
-		A9B01F4F522A4C1E1ADDDF27 /* Pods_WDChat_WDChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC46AB70FBED6AD6CD2A7171 /* Pods_WDChat_WDChatUITests.framework */; };
-		EA6677B41F8AEFEAD5A91711 /* Pods_WDChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4627042D19A01D2153FF565D /* Pods_WDChatTests.framework */; };
+		76FF18C6282A6AFA002B8F74 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF18C4282A6AFA002B8F74 /* Item.swift */; };
+		76FF18C7282A6AFA002B8F74 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FF18C5282A6AFA002B8F74 /* RequestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,6 @@
 		1A593A59526D46664595A62F /* Pods_WDChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		361407138821AAAAE45BEF98 /* Pods-WDChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChat.debug.xcconfig"; path = "Target Support Files/Pods-WDChat/Pods-WDChat.debug.xcconfig"; sourceTree = "<group>"; };
 		3E8EF53B428ACA7C4D40A06F /* Pods-WDChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChat.release.xcconfig"; path = "Target Support Files/Pods-WDChat/Pods-WDChat.release.xcconfig"; sourceTree = "<group>"; };
-		4627042D19A01D2153FF565D /* Pods_WDChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		761B225027CF5570001CD44E /* WDChatCoreUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatCoreUtils.swift; sourceTree = "<group>"; };
 		761B225527D06AEB001CD44E /* WDChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMessageView.swift; sourceTree = "<group>"; };
 		761B225727D0927B001CD44E /* WDChatMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMessageViewCell.swift; sourceTree = "<group>"; };
@@ -118,11 +117,8 @@
 		76403CC027CF16BA00084A7A /* WDChatMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatMineViewController.swift; sourceTree = "<group>"; };
 		76403CC427CF20AA00084A7A /* WDChatConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WDChatConstants.swift; sourceTree = "<group>"; };
 		76E89ED3281B82B10045317D /* WDLiveGiftPlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDLiveGiftPlay.swift; sourceTree = "<group>"; };
-		8233192811FB2BC3E6DE98EE /* Pods-WDChat-WDChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChat-WDChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-WDChat-WDChatUITests/Pods-WDChat-WDChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8651E236AEFC06DB02359DDC /* Pods-WDChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChatTests.debug.xcconfig"; path = "Target Support Files/Pods-WDChatTests/Pods-WDChatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C4FDD32D1D3BC5413A9B1DA9 /* Pods-WDChat-WDChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChat-WDChatUITests.release.xcconfig"; path = "Target Support Files/Pods-WDChat-WDChatUITests/Pods-WDChat-WDChatUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E43E720018A26FDA4F979B39 /* Pods-WDChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDChatTests.release.xcconfig"; path = "Target Support Files/Pods-WDChatTests/Pods-WDChatTests.release.xcconfig"; sourceTree = "<group>"; };
-		EC46AB70FBED6AD6CD2A7171 /* Pods_WDChat_WDChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDChat_WDChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76FF18C4282A6AFA002B8F74 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		76FF18C5282A6AFA002B8F74 /* RequestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +134,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6677B41F8AEFEAD5A91711 /* Pods_WDChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9B01F4F522A4C1E1ADDDF27 /* Pods_WDChat_WDChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				1A593A59526D46664595A62F /* Pods_WDChat.framework */,
-				EC46AB70FBED6AD6CD2A7171 /* Pods_WDChat_WDChatUITests.framework */,
-				4627042D19A01D2153FF565D /* Pods_WDChatTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,6 +314,8 @@
 				7636CFE327D2254B00BD7CEE /* LaunchScreen.storyboard */,
 				7636CFFB27D613F300BD7CEE /* WDChatHeader.swift */,
 				76E89ED3281B82B10045317D /* WDLiveGiftPlay.swift */,
+				76FF18C4282A6AFA002B8F74 /* Item.swift */,
+				76FF18C5282A6AFA002B8F74 /* RequestData.swift */,
 				7636D01C27DAF97C00BD7CEE /* VideoPlay */,
 				7636D00A27D87B5C00BD7CEE /* Scan */,
 				76403CC227CF208100084A7A /* Common */,
@@ -428,10 +422,6 @@
 			children = (
 				361407138821AAAAE45BEF98 /* Pods-WDChat.debug.xcconfig */,
 				3E8EF53B428ACA7C4D40A06F /* Pods-WDChat.release.xcconfig */,
-				8233192811FB2BC3E6DE98EE /* Pods-WDChat-WDChatUITests.debug.xcconfig */,
-				C4FDD32D1D3BC5413A9B1DA9 /* Pods-WDChat-WDChatUITests.release.xcconfig */,
-				8651E236AEFC06DB02359DDC /* Pods-WDChatTests.debug.xcconfig */,
-				E43E720018A26FDA4F979B39 /* Pods-WDChatTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -462,7 +452,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76403CA927CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChatTests" */;
 			buildPhases = (
-				885B709D1A4741EB4A0222BC /* [CP] Check Pods Manifest.lock */,
 				76403C8E27CF112100084A7A /* Sources */,
 				76403C8F27CF112100084A7A /* Frameworks */,
 				76403C9027CF112100084A7A /* Resources */,
@@ -481,11 +470,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76403CAC27CF112100084A7A /* Build configuration list for PBXNativeTarget "WDChatUITests" */;
 			buildPhases = (
-				0DEC72ECB7A3476D9EE72373 /* [CP] Check Pods Manifest.lock */,
 				76403C9827CF112100084A7A /* Sources */,
 				76403C9927CF112100084A7A /* Frameworks */,
 				76403C9A27CF112100084A7A /* Resources */,
-				9217D6BC5D26D7DEB3363576 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -568,28 +555,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DEC72ECB7A3476D9EE72373 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WDChat-WDChatUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5B47AF622537983817262908 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,45 +570,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WDChat/Pods-WDChat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		885B709D1A4741EB4A0222BC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WDChatTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9217D6BC5D26D7DEB3363576 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WDChat-WDChatUITests/Pods-WDChat-WDChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WDChat-WDChatUITests/Pods-WDChat-WDChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WDChat-WDChatUITests/Pods-WDChat-WDChatUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		93EE229F4212BEB2BE0152D9 /* [CP] Check Pods Manifest.lock */ = {
@@ -690,6 +616,7 @@
 				761B225627D06AEB001CD44E /* WDChatMessageView.swift in Sources */,
 				7636D02027DAFC7100BD7CEE /* WDPlayerView.swift in Sources */,
 				7636D01127D8813F00BD7CEE /* WDScanView.swift in Sources */,
+				76FF18C7282A6AFA002B8F74 /* RequestData.swift in Sources */,
 				7636CFEF27D5DE9F00BD7CEE /* WDColorExtension.swift in Sources */,
 				76403C8027CF111F00084A7A /* AppDelegate.swift in Sources */,
 				7636D01727DA041F00BD7CEE /* WDScanViewImageCell.swift in Sources */,
@@ -700,6 +627,7 @@
 				7636D01927DA095200BD7CEE /* WDMainBaseViewController.swift in Sources */,
 				7636D00927D7276600BD7CEE /* WDChatMineViewHeaderCell.swift in Sources */,
 				7636D00327D6F68400BD7CEE /* WDChatMineViewModel.swift in Sources */,
+				76FF18C6282A6AFA002B8F74 /* Item.swift in Sources */,
 				76403CB827CF144500084A7A /* WDChatMessageViewController.swift in Sources */,
 				7636D01527D8815300BD7CEE /* WDScanModel.swift in Sources */,
 				7636CFE727D5A92B00BD7CEE /* WDChatFindView.swift in Sources */,
@@ -936,7 +864,6 @@
 		};
 		76403CAA27CF112100084A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8651E236AEFC06DB02359DDC /* Pods-WDChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -962,7 +889,6 @@
 		};
 		76403CAB27CF112100084A7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E43E720018A26FDA4F979B39 /* Pods-WDChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -988,7 +914,6 @@
 		};
 		76403CAD27CF112100084A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8233192811FB2BC3E6DE98EE /* Pods-WDChat-WDChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1012,7 +937,6 @@
 		};
 		76403CAE27CF112100084A7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FDD32D1D3BC5413A9B1DA9 /* Pods-WDChat-WDChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

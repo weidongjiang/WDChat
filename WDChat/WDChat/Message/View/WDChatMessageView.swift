@@ -41,11 +41,26 @@ class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
         let tempData = self.viewModel?.crateMessageData()
         
         self.dataArray.removeAllObjects()
-        for model in tempData as! [WDChatMessageModel] {
-            self.dataArray.add(model)
-        }
-        self.tableView.reloadData()
         
+        URLAPI.shared.getDataimgRank(URLAPI.shared.imgRank) { result, resultStatus in
+//            print(resultStatus)
+//            print(result)
+            var datas = Array<WDChatMessageModel>()
+            
+            for item in result as! [Item]  {
+                var model = WDChatMessageModel()
+                model.name = item.user.login
+                model.message = item.content
+                model.time = item.id
+                model.iconAvater = item.user.thumb
+                
+                datas.append(model)
+            }
+            self.dataArray.addObjects(from: datas)
+            self.tableView.reloadData()
+            
+        }
+
     }
     
     
@@ -69,7 +84,7 @@ class WDChatMessageView: UIView,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArray.count ?? 0
+        return self.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
